@@ -1,10 +1,12 @@
 <template>
-    <el-container >
+    <el-container>
         <el-header height="70px">
-            <el-col :span="6">
+            <el-col :xs="{span:6,offset:0}" :sm="{span:6,offset:0}" :md="{span:6,offset:0}" :lg="{span:6,offset:0}"
+                :xl="{span:6,offset:0}">
                 <img class="logo" src="../assets/logo.png">
             </el-col>
-            <el-col :span="12" class="nav">
+            <el-col :xs="{span:12,offset:0}" :sm="{span:12,offset:0}" :md="{span:12,offset:0}" :lg="{span:12,offset:0}"
+                :xl="{span:12,offset:0}" class="nav">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect"
                     text-color="black">
                     <el-menu-item index="1">处理中心</el-menu-item>
@@ -19,31 +21,71 @@
                     <el-menu-item index="4">订单管理</el-menu-item>
                     <el-menu-item index="5">关于我们</el-menu-item>
                 </el-menu>
-                <!-- <div class="line"></div> -->
             </el-col>
-            <el-col :span="6">
-                <i class="el-icon-phone"></i>
-                <span class="header-phone">0715-8877363</span>
+            <el-col :xs="{span:6,offset:0}" :sm="{span:6,offset:0}" :md="{span:6,offset:0}" :lg="{span:6,offset:0}"
+                :xl="{span:6,offset:0}">
+                <div class="header-phone">
+                    <i class="el-icon-phone">0715-8877363</i>
+                </div>
             </el-col>
         </el-header>
         <el-main>
             <el-row>
                 <img class="banner" src="../assets/banner.jpg">
             </el-row>
-            <el-row class="solution-architecture">
+            <el-row>
                 <div class="title">方案架构</div>
-                <ul>
-                    <li><img src="../assets/solution1.jpg"></li>
-                    <li><img src="../assets/solution1.jpg"></li>
-                </ul>
+            </el-row>
+            <el-row class="solution-architecture">
+                <el-col :xs="{span:6,offset:4}" :sm="{span:6,offset:4}" :md="{span:6,offset:4}" :lg="{span:6,offset:4}"
+                    :xl="{span:6,offset:4}">
+                    <el-image :src="require('@/assets/solution1.jpg')" fit="contain">
+                        <div slot="placeholder" class="image-slot">
+                            <i class="el-icon-loading"></i>加载中
+                        </div>
+                        <div slot="error" class="image-slot">
+                            <i class="el-icon-picture-outline"></i>
+                        </div>
+                    </el-image>
+                </el-col>
+                <el-col :xs="{span:6,offset:4}" :sm="{span:6,offset:4}" :md="{span:6,offset:4}" :lg="{span:6,offset:4}"
+                    :xl="{span:6,offset:4}">
+                    <el-image :src="require('@/assets/solution1.jpg')" fit="contain">
+                        <div slot="placeholder" class="image-slot">
+                            <i class="el-icon-loading"></i>加载中
+                        </div>
+                        <div slot="error" class="image-slot">
+                            <i class="el-icon-picture-outline"></i>
+                        </div>
+                    </el-image>
+                </el-col>
+            </el-row>
+            <el-row>
+                <div class="title">应用场景</div>
             </el-row>
             <el-row class="application-scenario">
-                <div class="title">解决方案</div>
-                <ul>
+                <!-- <ul>
                     <li><img src="../assets/solution2.jpg"></li>
                     <li><img src="../assets/solution2.jpg"></li>
                     <li><img src="../assets/solution2.jpg"></li>
-                </ul>
+                </ul> -->
+                <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}"
+                    :lg="{span:20,offset:2}" :xl="{span:20,offset:2}" style="border: 1px solid black;">
+                    <el-col :span="10" style="border:1px solid blue;display: inline-flex;">
+
+                    </el-col>
+                    <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}"
+                        :lg="{span:10,offset:3}" :xl="{span:10,offset:3}" style="border:1px solid blue;display: inline-flex;">
+                        <el-image :src="require('@/assets/solution2.jpg')" fit="contain">
+                            <div slot="placeholder" class="image-slot">
+                                <i class="el-icon-loading"></i>加载中
+                            </div>
+                            <div slot="error" class="image-slot">
+                                <i class="el-icon-picture-outline"></i>
+                            </div>
+                        </el-image>
+                    </el-col>
+                </el-col>
             </el-row>
         </el-main>
         <el-footer height="300px">Footer</el-footer>
@@ -51,6 +93,8 @@
 </template>
 
 <script>
+    // const devEnv = require('../../config/dev.env.js');
+    import Api from '@/api/api'
     export default {
         data() {
             return {
@@ -60,7 +104,19 @@
         methods: {
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
+            },
+            handleTest() {
+                Api.getWeather(null).then(res => {
+                    console.info(res);
+                })
+
             }
+        },
+        mounted: function () {
+            // console.info(devEnv.VUE_APP_API_BASE_PATH)
+        },
+        created: function () {
+            this.handleTest();
         }
     }
 </script>
@@ -105,14 +161,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        /*关键*/
         background-position: center 0;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        /* min-width: 1600px; */
-        /* z-index: -10; */
         zoom: 1;
     }
 
@@ -134,7 +185,9 @@
         font-size: large;
     }
 
-    .solution-architecture>.title,.application-scenario>.title {
+    /* .solution-architecture>.el-col>.title,
+    .application-scenario>.el-col>.title { */
+    .title {
         font-size: 36px;
         color: #181a39;
         text-align: center;
@@ -152,7 +205,7 @@
         display: inline;
     }
 
-    .solution-architecture>ul>li>img {
+    .solution-architecture>ul>li>.el-image {
         width: 500px;
         height: 600px;
     }
@@ -164,9 +217,10 @@
     .application-scenario>ul {
         margin: auto;
     }
+
     .application-scenario>ul>li {
         list-style: none;
-       
+
     }
 
     .el-footer {
@@ -176,5 +230,4 @@
         line-height: 200px;
         padding: 0;
     }
-
 </style>
