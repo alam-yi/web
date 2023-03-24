@@ -8,7 +8,7 @@
     </el-row>
     <el-row>
       <el-col :span="4" :offset="4" class="f_h_i">优云平台</el-col>
-      <el-col :span="4" :offset="5" class="f_h_i">关于我们</el-col>
+      <el-col :span="4" :offset="5" class="f_h_i">公司介绍</el-col>
       <el-col :span="4"><i class="el-icon-phone-outline f_h_i">&nbsp;&nbsp;0715-8877363</i></el-col>
     </el-row>
     <el-row>
@@ -26,10 +26,30 @@
     </el-row>
     <el-divider></el-divider>
     <el-row>
-      <el-col style="color:#999999; text-align: center;">Copyrights © 2023 by 备案号</el-col>
+      <el-col style="color:#999999; text-align: center;">Copyrights © {{year}} by 备案号</el-col>
     </el-row>
   </el-row>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        year: 0
+      }
+    },
+    methods: {
+      getYear() {
+        let date = new Date();
+        let year = date.getFullYear();
+        this.year = year;
+      }
+    },
+    mounted: function() {
+      this.getYear();
+    }
+  }
+</script>
 
 <style>
   .foot {

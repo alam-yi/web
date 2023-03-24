@@ -15,7 +15,7 @@
         <el-row>
             <el-col :xs="{span:9,offset:2}" :sm="{span:9,offset:2}" :md="{span:9,offset:2}" :lg="{span:9,offset:2}"
                 :xl="{span:9,offset:2}" style="height: 400px;">
-                <el-image :src="require('@/assets/architecture.png')" fit="contain" style="border: 1px solid #EDEDED;">
+                <el-image :src="require('@/assets/architecture4.png')" fit="contain" style="border: 1px solid #EDEDED;border-radius: 10px;">
                     <div slot="placeholder" class="image-slot">
                         <i class="el-icon-loading"></i>加载中
                     </div>
@@ -70,7 +70,7 @@
             </el-col>
         </el-row>
         <el-row>
-            <div class="title">产品介绍</div>
+            <div class="title">应用场景</div>
         </el-row>
         <el-row>
             <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
@@ -91,15 +91,6 @@
                 </el-col>
             </el-col>
         </el-row>
-        <!-- <el-row>
-            <img class="banner" src="../assets/banner.jpg">
-        </el-row> -->
-        <el-row class="l">
-            <el-col :span="6" :offset="1" v-for="logo in logoSrc" :key="logo.name" class="logo_icon">
-                <el-image :src="logo.src" style="width: 60%;"></el-image>
-                <div class="demonstration" style="color:#1677FF">{{logo.name}}</div>
-            </el-col>
-        </el-row>
         <Foot></Foot>
     </div>
 </template>
@@ -118,11 +109,6 @@
                     { id: 2, idView: require('@/assets/banner1.jpg') },
                     { id: 3, idView: require('@/assets/banner2.jpeg') },
                 ],
-                // logoSrc: [
-                //     { name: '安全', src: require('@/assets/safe_logo.png') },
-                //     { name: '稳定', src: require('@/assets/stable_logo.png') },
-                //     { name: '高效', src: require('@/assets/efficiency_logo.png') },
-                // ],
                 safeLogoSrc: require('@/assets/safe_logo.png'),
                 costLogoSrc: require('@/assets/cost_logo.png'),
                 efficiencyLogoSrc: require('@/assets/efficiency_logo_1.png'),
