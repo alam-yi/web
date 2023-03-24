@@ -18,7 +18,7 @@
       </div> -->
       <el-dropdown>
         <span class="el-dropdown-link">
-          下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
+          产品介绍<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>黄金糕</el-dropdown-item>
@@ -68,6 +68,10 @@
 </script>
 
 <style>
+  .el-link:hover {
+    color: #FF9E00;
+  }
+
   .logo {
     height: 70px;
   }

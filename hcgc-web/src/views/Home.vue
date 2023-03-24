@@ -28,18 +28,22 @@
                 :xl="{span:7,offset:3}">
                 <div style="border: 1px solid #EDEDED;background-color: #EDEDED; border-radius:15px;height: 400px;">
                     <dl>
-                        <dd class="a_dd" style="font-size:xx-large;color: black;">惠城智慧交通解决方案</dd>
-                        <dd class="a_dd" style="text-align: initial;">
+                        <dd class="a_dd" style="font-size:xx-large;color: black;">惠诚共创交通解决方案</dd>
+                        <dd class="a_dd" style="text-align: initial;width: 445px;margin: auto;">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;惠诚共创科技将从总体上考虑系统的建设，并倾尽全力配合用户在系统的整体规划、工程实施建设、网络支持服务以及系统的维护管理等各重要环节进行周密的部署，以充分满足其业务发展的信息化建设需要。
                         </dd>
                         <dd class="a_dd">
                             <div
-                                style="border:1px solid white;background-color: white;border-radius: 15px;width:400px;height: 200px;margin:auto;">
+                                style="border:1px solid white;background-color: white;border-radius: 15px;width:450px;height: 190px;margin:auto;">
                                 <dl>
-                                    <dt style="text-align: left;padding-left: 20px;">方案价值：</dt>
-                                    <dd class="a_dd_dd"><i class="el-icon-caret-right" style="color: #409eff;"></i>通过GPS定位，准确定位车辆信息，实现车辆轨迹监控</dd>
-                                    <dd class="a_dd_dd"><i class="el-icon-caret-right" style="color: #409eff;"></i>保证驾驶员操作作业程序更加规范，实现驾驶员管理便捷</dd>
-                                    <dd class="a_dd_dd"><i class="el-icon-caret-right" style="color: #409eff;"></i>提高基础数据管理，降低材料、人力、财务、统计、分析将大幅降低经济成本</dd>
+                                    <dt style="text-align: left;padding-left: 20px;color: black;font-size: large;">方案价值：
+                                    </dt>
+                                    <dd class="a_dd_dd"><i class="el-icon-caret-right"
+                                            style="color: #409eff;"></i>准确定位车辆信息，实现车辆轨迹监控</dd>
+                                    <dd class="a_dd_dd"><i class="el-icon-caret-right"
+                                            style="color: #409eff;"></i>保证驾驶员操作更加规范，实现驾驶员管理便捷</dd>
+                                    <dd class="a_dd_dd"><i class="el-icon-caret-right"
+                                            style="color: #409eff;"></i>提高基础数据管理，并全方面大幅降低管理投入成本</dd>
                                 </dl>
                             </div>
                         </dd>
@@ -47,8 +51,26 @@
                 </div>
             </el-col>
         </el-row>
+        <el-row style="height: 700px;background-color: #F6F7F9;margin-top: 100px;">
+            <div class="title">方案价值</div>
+            <el-col :span="6" :offset="2" class="scheme_item">
+                <el-image :src="safeLogoSrc" class="scheme_img"></el-image>
+                <div class="scheme_title">保障司机安全</div>
+                <div class="scheme_desc">为司机保驾护航，掌握行驶实时动态，最大限度降低安全事故。</div>
+            </el-col>
+            <el-col :span="6" :offset="1" class="scheme_item">
+                <el-image :src="efficiencyLogoSrc" class="scheme_img"></el-image>
+                <div class="scheme_title">提升车辆管理效率</div>
+                <div class="scheme_desc">第一时间发现、第一时间处理，相较于传统运维效率显著提升。</div>
+            </el-col>
+            <el-col :span="6" :offset="1" class="scheme_item">
+                <el-image :src="costLogoSrc" class="scheme_img"></el-image>
+                <div class="scheme_title">节约多项成本</div>
+                <div class="scheme_desc">提高基础数据管理，大幅降低材料、人力、财务、统计、分析经济成本。</div>
+            </el-col>
+        </el-row>
         <el-row>
-            <div class="title">应用场景</div>
+            <div class="title">产品介绍</div>
         </el-row>
         <el-row>
             <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
@@ -73,7 +95,7 @@
             <img class="banner" src="../assets/banner.jpg">
         </el-row> -->
         <el-row class="l">
-            <el-col :span="6" :offset="1" v-for="logo in logoSrc" :key="logo" class="logo">
+            <el-col :span="6" :offset="1" v-for="logo in logoSrc" :key="logo.name" class="logo_icon">
                 <el-image :src="logo.src" style="width: 60%;"></el-image>
                 <div class="demonstration" style="color:#1677FF">{{logo.name}}</div>
             </el-col>
@@ -96,11 +118,14 @@
                     { id: 2, idView: require('@/assets/banner1.jpg') },
                     { id: 3, idView: require('@/assets/banner2.jpeg') },
                 ],
-                logoSrc: [
-                    { name: '安全', src: require('@/assets/safe_logo.png') },
-                    { name: '稳定', src: require('@/assets/stable_logo.png') },
-                    { name: '高效', src: require('@/assets/efficiency_logo.png') },
-                ],
+                // logoSrc: [
+                //     { name: '安全', src: require('@/assets/safe_logo.png') },
+                //     { name: '稳定', src: require('@/assets/stable_logo.png') },
+                //     { name: '高效', src: require('@/assets/efficiency_logo.png') },
+                // ],
+                safeLogoSrc: require('@/assets/safe_logo.png'),
+                costLogoSrc: require('@/assets/cost_logo.png'),
+                efficiencyLogoSrc: require('@/assets/efficiency_logo_1.png'),
                 carouselHeight: null
             }
         },
@@ -200,9 +225,18 @@
         background-color: #d3dce6;
     }
 
-    .logo>.el-image>img {
-        width: 60%;
+    .logo_icon>.el-image>img {
+        width: 50%;
+
+        transition: 1s;
+        cursor: pointer;
     }
+
+    .logo_icon>.el-image:hover img {
+        transition: 1s;
+        transform: scale(1.2);
+    }
+
 
     .l {
         /* -webkit-transform: translateY(100%);
@@ -214,8 +248,42 @@
     .a_dd {
         margin: 0;
         padding: 10px;
+        color: #73777c;
     }
+
     .a_dd_dd {
         margin: 0;
+        float: left;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+    .scheme_item {
+        background-color: white;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .scheme_item:hover {
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) */
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .scheme_img {
+        width: 80px;
+        margin-top: 50px;
+    }
+
+    .scheme_title {
+        font-size: x-large;
+        margin-top: 15px;
+    }
+
+    .scheme_desc {
+        margin: auto;
+        line-height: 30px;
+        color: #73777c;
+        width: 80%;
+        margin-top: 20px;
     }
 </style>

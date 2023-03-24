@@ -1,22 +1,63 @@
 <template>
-  <el-row class="foot">
-
+  <el-row class="foot" style="text-align: left;position: relative;">
+    <el-row>
+      <el-col :span="4" :offset="4" class="f_h">产品介绍</el-col>
+      <el-col :span="4" :offset="1" class="f_h">解决方案</el-col>
+      <el-col :span="4" class="f_h">关于我们</el-col>
+      <el-col :span="4" class="f_h">联系我们</el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="4" :offset="4" class="f_h_i">优云平台</el-col>
+      <el-col :span="4" :offset="5" class="f_h_i">关于我们</el-col>
+      <el-col :span="4"><i class="el-icon-phone-outline f_h_i">&nbsp;&nbsp;0715-8877363</i></el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="4" :offset="4" class="f_h_i">出租车平台</el-col>
+      <el-col :span="4" :offset="9"><i class="el-icon-message f_h_i">&nbsp;&nbsp;123124214@qq.com</i></el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="4" :offset="4" class="f_h_i">运维平台</el-col>
+      <el-col :span="4" :offset="9"><i class="el-icon-office-building f_h_i">&nbsp;&nbsp;湖北惠诚共创</i></el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="4" :offset="17">
+        <i class="el-icon-location-outline f_h_i">&nbsp;&nbsp;湖北省咸宁市温泉区XXXXXXX</i>
+      </el-col>
+    </el-row>
+    <el-divider></el-divider>
+    <el-row>
+      <el-col style="color:#999999; text-align: center;">Copyrights © 2023 by 备案号</el-col>
+    </el-row>
   </el-row>
 </template>
 
 <style>
-  .el-footer {
-    background-color: #373737;
-    color: #f0f2f6;
-    text-align: center;
-    line-height: 200px;
-    padding: 0;
+  .foot {
+    /* background-color: #373737; */
+    background-color: black;
+    width: 100%;
+    height: 350px;
   }
 
-  .foot {
-    /* background: url("../../assets/banner_2.png"); */
-    background-color:black;
-    width: 100%;
-    height: 400px;
+  .foot>.el-row:nth-child(1) {
+    font-size: large;
+    padding-top: 50px;
+  }
+
+  .f_h {
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  .f_h_i {
+    color: #999999;
+    padding: 10px 0 10px 0;
+
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .f_h_i:hover {
+    color: white;
   }
 </style>
