@@ -13,9 +13,10 @@
             <div class="title">方案架构</div>
         </el-row>
         <el-row>
-            <el-col :xs="{span:9,offset:2}" :sm="{span:9,offset:2}" :md="{span:9,offset:2}" :lg="{span:9,offset:2}"
-                :xl="{span:9,offset:2}" style="height: 400px;">
-                <el-image :src="require('@/assets/architecture4.png')" fit="contain" style="border: 1px solid #EDEDED;border-radius: 10px;">
+            <el-col :xs="{span:9,offset:3}" :sm="{span:9,offset:3}" :md="{span:9,offset:3}" :lg="{span:9,offset:3}"
+                :xl="{span:9,offset:3}" style="height: 400px;">
+                <el-image :src="require('@/assets/architecture4.png')" fit="contain"
+                    style="border: 1px solid #EDEDED;border-radius: 10px;">
                     <div slot="placeholder" class="image-slot">
                         <i class="el-icon-loading"></i>加载中
                     </div>
@@ -24,9 +25,10 @@
                     </div>
                 </el-image>
             </el-col>
-            <el-col :xs="{span:7,offset:3}" :sm="{span:7,offset:3}" :md="{span:7,offset:3}" :lg="{span:7,offset:3}"
-                :xl="{span:7,offset:3}">
-                <div style="border: 1px solid #EDEDED;background-color: #EDEDED; border-radius:15px;height: 400px;">
+            <el-col :xs="{span:7,offset:2}" :sm="{span:7,offset:2}" :md="{span:7,offset:2}" :lg="{span:7,offset:2}"
+                :xl="{span:7,offset:2}">
+                <div
+                    style="border: 1px solid #EDEDED;background-color: #EDEDED; border-radius:15px;height: 400px;width: 500px;">
                     <dl>
                         <dd class="a_dd" style="font-size:xx-large;color: black;">惠诚共创交通解决方案</dd>
                         <dd class="a_dd" style="text-align: initial;width: 445px;margin: auto;">
@@ -34,7 +36,7 @@
                         </dd>
                         <dd class="a_dd">
                             <div
-                                style="border:1px solid white;background-color: white;border-radius: 15px;width:450px;height: 190px;margin:auto;">
+                                style="border:1px solid white;background-color: white;border-radius: 15px;width:440px;height: 190px;margin:auto;">
                                 <dl>
                                     <dt style="text-align: left;padding-left: 20px;color: black;font-size: large;">方案价值：
                                     </dt>
@@ -74,13 +76,21 @@
         </el-row>
         <el-row>
             <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
-                :xl="{span:20,offset:2}" style="border: 1px solid black;">
-                <el-col :span="10" style="border:1px solid blue;display: inline-flex;">
+                :xl="{span:20,offset:2}" style="height: 425px;">
+                <el-col :span="10" :offset="1" style="margin-top: 1%;">
+                    <div>
+                        <dl>
+                            <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">
+                                面向政府、企业提供智慧交通解决方案</dd>
+                            <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;">
+                                城市高速公路监控系统、城市电子收费系统、城市道路信息管理系统、汽车电子系统、停车场管理系统综合性协调运作，使人、车、路和交通系统交互一体，为交管部门提供交通信息，解决城市堵塞以及快速响应突发状况，智慧交通收集各类信息，为驾驶者提供多样化服务。
+                            </dd>
+                        </dl>
+                    </div>
                 </el-col>
                 <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}"
-                    :lg="{span:10,offset:3}" :xl="{span:10,offset:3}"
-                    style="border:1px solid blue;display: inline-flex;">
-                    <el-image :src="require('@/assets/solution2.jpg')" fit="contain">
+                    :lg="{span:10,offset:3}" :xl="{span:10,offset:3}">
+                    <el-image :src="require('@/assets/company.png')" fit="contain">
                         <div slot="placeholder" class="image-slot">
                             <i class="el-icon-loading"></i>加载中
                         </div>
@@ -90,6 +100,63 @@
                     </el-image>
                 </el-col>
             </el-col>
+        </el-row>
+        <el-row>
+            <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
+                :xl="{span:20,offset:2}" style="height: 500px;">
+                <el-col :xs="{span:10,offset:0}" :sm="{span:10,offset:0}" :md="{span:10,offset:0}"
+                    :lg="{span:10,offset:0}" :xl="{span:10,offset:0}" style="margin-top:50px;">
+                    <el-image :src="require('@/assets/car.jpeg')" fit="contain">
+                        <div slot="placeholder" class="image-slot">
+                            <i class="el-icon-loading"></i>加载中
+                        </div>
+                        <div slot="error" class="image-slot">
+                            <i class="el-icon-picture-outline"></i>
+                        </div>
+                    </el-image>
+                </el-col>
+                <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}"
+                    :lg="{span:10,offset:3}" :xl="{span:10,offset:3}" style="margin-top: 5.5%;">
+                    <div>
+                        <dl>
+                            <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">智能车联网监控管理系统平台
+                            </dd>
+                            <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;">
+                                针对不同的场景，提供了多样化管理平台：两客一危车辆智能监控管理平台；智能公交监控调度一体化管理平台；货运监控管理平台；出租车智能化监控管理平台；押运车监控管理平台；船舶监控管理平台。（车辆传感设备：胎压监测、油量监测、载重监测、车辆举升监测、门磁监测等）
+                            </dd>
+                        </dl>
+                    </div>
+                </el-col>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
+                :xl="{span:20,offset:2}" style="height: 500px;">
+                <el-col :span="10" :xl="{span:10,offset:3}" style="margin-top: 5.5%;">
+                    <div>
+                        <dl>
+                            <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">安防监控信息化系统</dd>
+                            <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;">
+                                准确有效提供安防监控系统，将监控视频中心和网络监控中心互联结合，让整体结构清晰、简洁、集成度高；管理应用方便，减轻操作维护人员工作；查看监控简便，任意回放一个或多个监控画面；体现无缝扩展能力，只要添加远程监控点就可以组成庞大的多级监控网络。
+                            </dd>
+                        </dl>
+                    </div>
+                </el-col>
+                <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}"
+                    :lg="{span:10,offset:3}" :xl="{span:10,offset:3}" style="margin-top:50px;">
+                    <el-image :src="require('@/assets/monitor.jpg')" fit="contain">
+                        <div slot="placeholder" class="image-slot">
+                            <i class="el-icon-loading"></i>加载中
+                        </div>
+                        <div slot="error" class="image-slot">
+                            <i class="el-icon-picture-outline"></i>
+                        </div>
+                    </el-image>
+                </el-col>
+            </el-col>
+        </el-row>
+        <el-row>
+            <div class="title">优秀案例</div>
         </el-row>
         <Foot></Foot>
     </div>
@@ -111,7 +178,7 @@
                 ],
                 safeLogoSrc: require('@/assets/safe_logo.png'),
                 costLogoSrc: require('@/assets/cost_logo.png'),
-                efficiencyLogoSrc: require('@/assets/efficiency_logo_1.png'),
+                efficiencyLogoSrc: require('@/assets/efficiency_logo.png'),
                 carouselHeight: null
             }
         },

@@ -7,7 +7,7 @@
       <el-col :span="4" class="f_h">联系我们</el-col>
     </el-row>
     <el-row>
-      <el-col :span="4" :offset="4" class="f_h_i">优云平台</el-col>
+      <el-col :span="4" :offset="4" class="f_h_i">优云智联</el-col>
       <el-col :span="4" :offset="5" class="f_h_i">公司介绍</el-col>
       <el-col :span="4"><i class="el-icon-phone-outline f_h_i">&nbsp;&nbsp;0715-8877363</i></el-col>
     </el-row>

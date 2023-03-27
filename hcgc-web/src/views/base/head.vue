@@ -2,7 +2,7 @@
   <el-row class="nav">
     <el-col :xs="{span:6,offset:0}" :sm="{span:6,offset:0}" :md="{span:6,offset:0}" :lg="{span:6,offset:0}"
       :xl="{span:6,offset:0}">
-      <img class="logo" src="../../assets/logo.png">
+      <img class="logo" src="../../assets/logo.png" @click="linkToHome()">
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
@@ -10,22 +10,14 @@
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
-      <!-- <el-link class="nav_prod">产品介绍</el-link><i class="i_prod el-icon-caret-top"></i>
-      <div class="prod_menu">
-        <div class="drop">选项A</div>
-        <div class="drop">选项B</div>
-        <div class="drop">选项C</div>
-      </div> -->
       <el-dropdown>
         <span class="el-dropdown-link">
           产品介绍<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>黄金糕</el-dropdown-item>
-          <el-dropdown-item>狮子头</el-dropdown-item>
-          <el-dropdown-item>螺蛳粉</el-dropdown-item>
-          <el-dropdown-item disabled>双皮奶</el-dropdown-item>
-          <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+          <el-dropdown-item>优云智联</el-dropdown-item>
+          <el-dropdown-item>出租车平台</el-dropdown-item>
+          <el-dropdown-item>运维平台</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
       
@@ -74,6 +66,7 @@
 
   .logo {
     height: 70px;
+    cursor: pointer;
   }
 
   .nav {
