@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { Message } from 'element-ui';
-// import { getToken, setToken, setAuthorized, setBeforePathName, getLanguage } from './auth';
 
 const apiBasePath = process.env.VUE_APP_API_BASE_PATH;
 // const { NODE_ENV } = process.env;

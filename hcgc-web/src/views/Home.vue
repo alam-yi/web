@@ -32,7 +32,7 @@
                     <dl>
                         <dd class="a_dd" style="font-size:xx-large;color: black;">惠诚共创交通解决方案</dd>
                         <dd class="a_dd" style="text-align: initial;width: 445px;margin: auto;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;惠诚共创科技将从总体上考虑系统的建设，并倾尽全力配合用户在系统的整体规划、工程实施建设、网络支持服务以及系统的维护管理等各重要环节进行周密的部署，以充分满足其业务发展的信息化建设需要。
+                            &emsp;&emsp;湖北惠诚共创科技将从总体上考虑系统的建设，并倾尽全力配合用户在系统的整体规划、工程实施建设、网络支持服务以及系统的维护管理等各重要环节进行周密的部署，以充分满足其业务发展的信息化建设需要。
                         </dd>
                         <dd class="a_dd">
                             <div
@@ -155,8 +155,37 @@
                 </el-col>
             </el-col>
         </el-row>
-        <el-row>
+        <el-row style="height: 900px;background-color: #F6F7F9;">
             <div class="title">优秀案例</div>
+            <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
+                :xl="{span:20,offset:2}" style="height: 510px;">
+                <el-col :xs="{span:11,offset:3}" :sm="{span:11,offset:3}" :md="{span:11,offset:3}"
+                    :lg="{span:11,offset:3}" :xl="{span:11,offset:3}" style="margin:0;">
+                    <el-image :src="require('@/assets/case2.png')" fit="contain" class="case_img">
+                        <div slot="placeholder" class="image-slot">
+                            <i class="el-icon-loading"></i>加载中
+                        </div>
+                        <div slot="error" class="image-slot">
+                            <i class="el-icon-picture-outline"></i>
+                        </div>
+                    </el-image>
+                </el-col>
+                <el-col :xs="{span:10,offset:2}" :sm="{span:10,offset:2}" :md="{span:10,offset:2}"
+                    :lg="{span:10,offset:2}" :xl="{span:10,offset:2}">
+                    <div>
+                        <dl>
+                            <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">湖北某公交项目</dd>
+                            <dd style="text-align: initial;margin: auto; line-height: 35px;color: #73777c;">
+                                相对传统公交，智能公交提高了安全管理智能化水平，根据客流和路况，对驾驶员行驶过程进行预警，降低事故发生概率，提高安全工作。
+                                通过”GPS智能报站”，避免传统报站的错报，漏报，误报硬气的纠纷，提高乘客的满意率。
+                                智能调度系统提高了公交线路在集中调度和单边调度的效率，实时监控、统筹发车、优化运力配置以及综合协调规范提高了车辆使用率、降低了运营成本，实现运营效能最大化。
+                                通过智能公交app，实时了解车辆已驶达的站点和前方交通情况，调整乘客自身乘车策略。
+                                借助视频监控系统，强化公安安防管理，对不法分子形成强大威慑;随时监测客流变化，优化运力调配，有效提高公交服务水平。
+                            </dd>
+                        </dl>
+                    </div>
+                </el-col>
+            </el-col>
         </el-row>
         <Foot></Foot>
     </div>
@@ -172,9 +201,9 @@
         data() {
             return {
                 bannerList: [
-                    { id: 1, idView: require('@/assets/banner_1.jpg') },
-                    { id: 2, idView: require('@/assets/banner1.jpg') },
-                    { id: 3, idView: require('@/assets/banner2.jpeg') },
+                    { id: 1, idView: require('@/assets/banner_11.png') },
+                    { id: 2, idView: require('@/assets/620.png') },
+                    { id: 3, idView: require('@/assets/618.png') },
                 ],
                 safeLogoSrc: require('@/assets/safe_logo.png'),
                 costLogoSrc: require('@/assets/cost_logo.png'),
@@ -339,4 +368,8 @@
         width: 80%;
         margin-top: 20px;
     }
+
+    /* .case_img:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+    } */
 </style>

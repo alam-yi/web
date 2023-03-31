@@ -12,19 +12,28 @@
       :xl="{span:2,offset:0}" class="nav-item">
       <el-dropdown>
         <span class="el-dropdown-link">
-          产品介绍<i class="el-icon-arrow-down el-icon--right"></i>
+          产品服务<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>优云智联</el-dropdown-item>
-          <el-dropdown-item>出租车平台</el-dropdown-item>
-          <el-dropdown-item>运维平台</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToProdYouyun()">优云智联</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToProdBus()">智慧交通</el-dropdown-item>
+          <!-- <el-dropdown-item><a @click="linkToProdBus()">公交运维平台</a></el-dropdown-item> -->
         </el-dropdown-menu>
       </el-dropdown>
-      
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
-      <el-link>解决方案</el-link>
+      <el-dropdown>
+        <span class="el-dropdown-link">
+          解决方案<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item @click.native="linkToBusSolution()">城乡公交</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToTaxiSolution()">出租车/网约车</el-dropdown-item>
+          <el-dropdown-item>物流/客运</el-dropdown-item>
+          <el-dropdown-item>校车</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" @click="linkToAboutUs()" class="nav-item">
@@ -51,9 +60,27 @@
       },
       linkToAboutUs() {
         this.$router.push('/about-us');
+        document.documentElement.scrollTop = 0;
       },
       linkToHome() {
         this.$router.push('/index');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToProdYouyun() {
+        this.$router.push('/products/youyun');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToProdBus() {
+        this.$router.push('/products/bus');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToBusSolution() {
+        this.$router.push('/solution/bus');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToTaxiSolution() {
+        this.$router.push('/solution/taxi');
+        document.documentElement.scrollTop = 0;
       },
     },
   }
@@ -76,7 +103,7 @@
     margin: 0 auto;
     background-color: #ffffff;
     height: 70px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
@@ -141,6 +168,7 @@
     cursor: pointer;
     /* color: #409EFF; */
   }
+
   .el-dropdown {
     font-size: 17px;
   }
