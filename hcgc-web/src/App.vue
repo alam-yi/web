@@ -1,20 +1,15 @@
 <template>
   <div id="content">
-    <!-- <TestPage/> -->
-      <router-view></router-view>
+    <router-view></router-view>
 
     <el-backtop />
   </div>
 </template>
 
 <script>
-  // import TestPage from './components/TestPage'
 
   export default {
     name: 'App',
-    components: {
-      // TestPage,
-    }
   }
 
 
@@ -27,7 +22,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    /* margin-top: 60px; */
   }
 
   .fade-enter {

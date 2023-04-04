@@ -2,10 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import AboutUs from '../views/aboutus'
-import ProdYouYun from '../views/products/youyun'
-import ProdBus from '../views/products/bus'
+import Product from '../views/product'
 import BusSolution from '../views/solution/bus'
 import TaxiSolution from '../views/solution/taxi'
+import SchoolBusSolution from '../views/solution/schoolbus'
 
 Vue.use(VueRouter);
 // 解决多次点击同一路由，导致路由被多次添加
@@ -29,14 +29,9 @@ const router = new VueRouter({
       component: Home
     },
     {
-      path: '/products/youyun',
-      name: 'prod_youyun',
-      component: ProdYouYun,
-    },
-    {
-      path: '/products/bus',
-      name: 'prod_bus',
-      component: ProdBus,
+      path: '/product',
+      name: 'product',
+      component: Product,
     },
     {
       path: '/solution/bus',
@@ -47,6 +42,11 @@ const router = new VueRouter({
       path: '/solution/taxi',
       name: 'taxi_solution',
       component: TaxiSolution,
+    },
+    {
+      path: '/solution/school-bus',
+      name: 'school_bus_solution',
+      component: SchoolBusSolution,
     },
     {
       path: '/about-us',

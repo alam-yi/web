@@ -38,7 +38,7 @@
         </el-col>
       </el-col>
     </el-row>
-    <el-row style="margin-top:100px;padding-bottom: 100px;">
+    <el-row style="margin-top:100px;padding-bottom: 20px;">
       <div id="idea" style="width: 1100px;height: 300px;position: relative;">
         <div id="company_idea_title">
           <span style="font-size: x-large;font-weight: 600;float: left;">企业理念</span>
@@ -47,49 +47,6 @@
           <div style="text-align:left;font-size: large;">专业创造价值、科技引领未来</div>
           <div style="text-align:left;font-weight: 300;margin-top:20px;line-height: 30px;">
             湖北惠诚共创科技有限公司以“专业创造价值、科技引领未来”为目标，以务实高效，优质服务的经营理念为依托，以客户需求为导向，以产品质量和优质的服务为中心，接轨市场，积极探索追求，不懈努力、竭尽所能的态度对每一个信任本公司的企业负责。
-          </div>
-        </div>
-      </div>
-    </el-row>
-    <el-row>
-      <div id="history_nav" style="font-size:xxx-large;line-height: 350px;color:white;">发展历程</div>
-    </el-row>
-    <el-row>
-      <el-timeline>
-        <el-timeline-item timestamp="2018/4/12" placement="top">
-          <el-card>
-            <h4>更新 Github 模板</h4>
-            <p>王小虎 提交于 2018/4/12 20:46</p>
-          </el-card>
-        </el-timeline-item>
-        <el-timeline-item timestamp="2018/4/3" placement="top">
-          <el-card>
-            <h4>更新 Github 模板</h4>
-            <p>王小虎 提交于 2018/4/3 20:46</p>
-          </el-card>
-        </el-timeline-item>
-        <el-timeline-item timestamp="2018/4/2" placement="top">
-          <el-card>
-            <h4>更新 Github 模板</h4>
-            <p>王小虎 提交于 2018/4/2 20:46</p>
-          </el-card>
-        </el-timeline-item>
-      </el-timeline>
-
-
-      <Timeline :timelineDesc="timelineDesc" :width="480" />
-
-    </el-row>
-    <el-row style="margin-top:100px;">
-      <div id="idea" style="width: 1100px;height: 300px;position: relative;">
-        <div id="company_idea_title">
-          <span style="font-size: x-large;font-weight: 600;float: left;">企业文化</span>
-        </div>
-        <div id="company_idea_detail">
-          <div style="text-align:left;font-size: large;">追求极致<el-divider direction="vertical"></el-divider>专业·专注·专心
-          </div>
-          <div style="text-align:left;font-weight: 300;margin-top:20px;line-height: 30px;">
-            以实现客户价值为目标，追求极致，尽善尽美。做事专业：此心用度八千遍，不嫌厌倦；做事专注：抓准一个点，然后像一个钉子钻下去，做深、做透；做事专心：小事成就大事，细节成就完美。
           </div>
         </div>
       </div>
@@ -145,9 +102,9 @@
             <div style="font-size: large;line-height: 100px;width: 250px;margin:auto;">计算机软件著作权登记证书</div>
           </div>
           <div class="qualification">
-            <div style="width: 250px;height: 200px;margin:auto;margin-top:70px;overflow: hidden;">
+            <div style="width: 170px;height: 270px;margin:auto;margin-top:30px;overflow: hidden;">
               <el-image class="qualification_img"
-                :src="require('@/assets/company_qualification/qualification_four.jpg')" fit="fill"
+                :src="require('@/assets/company_qualification/qualification_four.png')" fit="fill"
                 :preview-src-list="qualification_img_url_four">
                 <div slot="placeholder" class="image-slot">
                   <i class="el-icon-loading"></i>加载中
@@ -157,7 +114,7 @@
                 </div>
               </el-image>
             </div>
-            <div style="font-size: large;line-height: 100px;width: 250px;margin:auto;margin-top:25px;">高新技术企业证书</div>
+            <div style="font-size: large;width: 250px;margin:auto;margin-top:25px;">湖北省道路运输车辆卫星定位平台服务商备案通知书</div>
           </div>
         </div>
       </el-col>
@@ -169,7 +126,7 @@
           <div class="qualification">
             <div style="width: 250px;height: 200px;margin:auto;margin-top:70px;overflow: hidden;">
               <el-image class="qualification_img"
-                :src="require('@/assets/company_qualification/qualification_five.jpg')" fit="fill"
+                :src="require('@/assets/company_qualification/qualification_five.png')" fit="fill"
                 :preview-src-list="qualification_img_url_five">
                 <div slot="placeholder" class="image-slot">
                   <i class="el-icon-loading"></i>加载中
@@ -229,6 +186,20 @@
         </div>
       </el-col>
     </el-row>
+    <el-row style="margin-top:50px;margin-bottom: 80px;">
+      <div id="idea" style="width: 1100px;height: 300px;position: relative;">
+        <div id="company_idea_title">
+          <span style="font-size: x-large;font-weight: 600;float: left;">企业文化</span>
+        </div>
+        <div id="company_idea_detail">
+          <div style="text-align:left;font-size: large;">追求极致<el-divider direction="vertical"></el-divider>专业·专注·专心
+          </div>
+          <div style="text-align:left;font-weight: 300;margin-top:20px;line-height: 30px;">
+            以实现客户价值为目标，追求极致，尽善尽美。做事专业：此心用度八千遍，不嫌厌倦；做事专注：抓准一个点，然后像一个钉子钻下去，做深、做透；做事专心：小事成就大事，细节成就完美。
+          </div>
+        </div>
+      </div>
+    </el-row>
     <Foot></Foot>
   </div>
 </template>
@@ -236,14 +207,12 @@
 <script>
   import Head from '../views/base/head'
   import Foot from '../views/base/foot'
-  import Timeline from '../views/timeline'
 
   export default {
     name: 'HelloWorld',
     components: {
       Head,
       Foot,
-      Timeline,
     },
     data() {
       return {
@@ -257,10 +226,10 @@
           require('@/assets/company_qualification/qualification_three.jpg')
         ],
         qualification_img_url_four: [
-          require('@/assets/company_qualification/qualification_four.jpg')
+          require('@/assets/company_qualification/qualification_four.png')
         ],
         qualification_img_url_five: [
-          require('@/assets/company_qualification/qualification_five.jpg')
+          require('@/assets/company_qualification/qualification_five.png')
         ],
         qualification_img_url_six: [
           require('@/assets/company_qualification/qualification_six.png')
@@ -271,21 +240,11 @@
         qualification_img_url_eight: [
           require('@/assets/company_qualification/qualification_eight.jpg')
         ],
-        timelineDesc: ['Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-          'Create a services site',
-          'Create a services site',
-          'Create a services site',
-          'Create a services site'
-        ],
       }
     },
-    created: function () {
-      // this.$message('这是一条消息提示');
-    }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .about_us_banner {
     background-image: url("../assets/about_us3.png");
@@ -298,7 +257,6 @@
     background-image: url("../assets/test2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* border: 1px solid red; */
 
     margin: auto;
   }
@@ -324,10 +282,6 @@
     position: absolute;
     top: 50px;
     left: 650px;
-  }
-
-  #history_nav {
-    background-image: url("../assets/history4.png");
   }
 
   .qualification {

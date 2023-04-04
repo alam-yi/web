@@ -13,7 +13,7 @@
     </el-row>
     <el-row>
       <el-col :span="20" :offset="2" style="height: 800px;">
-        <el-image :src="require('@/assets/taxi_solution_1.png')" fit="contain" class="bus_img_1">
+        <el-image :src="require('@/assets/solution/taxi_solution_1.png')" fit="contain" class="bus_img_1">
           <div slot="placeholder" class="image-slot">
             <i class="el-icon-loading"></i>加载中
           </div>
@@ -25,26 +25,29 @@
     </el-row>
     <el-row style="height: 700px;background-color: #F6F7F9;margin-top: 100px;">
       <div class="title">主动安全</div>
-      <el-col :span="3" :offset="3" class="safe_item">
-        <el-image :src="safe_img_1" class="safe_img"></el-image>
-        <div class="safe_title">疲劳驾驶</div>
-      </el-col>
-      <el-col :span="3" :offset="1" class="safe_item">
-        <el-image :src="safe_img_2" class="safe_img"></el-image>
-        <div class="safe_title">抽烟驾驶</div>
-      </el-col>
-      <el-col :span="3" :offset="1" class="safe_item">
-        <el-image :src="safe_img_3" class="safe_img"></el-image>
-        <div class="safe_title">打电话驾驶</div>
-      </el-col>
-      <el-col :span="3" :offset="1" class="safe_item">
-        <el-image :src="safe_img_4" class="safe_img"></el-image>
-        <div class="safe_title">车道偏离</div>
-      </el-col>
-      <el-col :span="3" :offset="1" class="safe_item">
-        <el-image :src="safe_img_5" class="safe_img"></el-image>
-        <div class="safe_title">未系安全带</div>
-      </el-col>
+      <div style="font-size:large;margin-top:-30px;">实时检测驾驶过程中可能遇到的不安全驾驶行为，通过提醒驾驶员，同时上报平台，预防和减少安全事故的发生。</div>
+      <div style="margin-top:70px;">
+        <el-col :span="3" :offset="3" class="safe_item">
+          <el-image :src="safe_img_1" class="safe_img"></el-image>
+          <div class="safe_title">疲劳驾驶</div>
+        </el-col>
+        <el-col :span="3" :offset="1" class="safe_item">
+          <el-image :src="safe_img_2" class="safe_img"></el-image>
+          <div class="safe_title">抽烟驾驶</div>
+        </el-col>
+        <el-col :span="3" :offset="1" class="safe_item">
+          <el-image :src="safe_img_3" class="safe_img"></el-image>
+          <div class="safe_title">打电话驾驶</div>
+        </el-col>
+        <el-col :span="3" :offset="1" class="safe_item">
+          <el-image :src="safe_img_4" class="safe_img"></el-image>
+          <div class="safe_title">车道偏离</div>
+        </el-col>
+        <el-col :span="3" :offset="1" class="safe_item">
+          <el-image :src="safe_img_5" class="safe_img"></el-image>
+          <div class="safe_title">未系安全带</div>
+        </el-col>
+      </div>
     </el-row>
     <el-row>
       <div style="font-size:xx-large;line-height: 250px;">方案优势</div>
@@ -56,18 +59,19 @@
           <div>
             <dl>
               <dd
-                style="font-size:x-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
-                智能调度及实时监控</dd>
+                style="font-size:xx-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
+                保障司乘人员安全及服务监管</dd>
               <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
-              <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;">
-                结合车载监控终端系统，可提供排班设置、公交调度、下发报站、实时监控/对讲、录像和轨迹回放等功能，能让公交调度人员的工作更加高效，节省人力和时间成本。
+              <dd
+                style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;font-size: large;">
+                为司机设置一键报警功能，同时针对后排乘客智能监控，保障司乘人员的安全。对驾驶员的服务进行监管，提升服务水平。
               </dd>
             </dl>
           </div>
         </el-col>
         <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}" :lg="{span:10,offset:3}"
           :xl="{span:10,offset:3}">
-          <el-image :src="require('@/assets/bus2.jpg')" fit="contain">
+          <el-image :src="require('@/assets/solution/taxi_solution_3.jpg')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -83,7 +87,7 @@
         :xl="{span:20,offset:2}" style="height: 500px;">
         <el-col :xs="{span:10,offset:0}" :sm="{span:10,offset:0}" :md="{span:10,offset:0}" :lg="{span:10,offset:0}"
           :xl="{span:10,offset:0}" style="margin-top:50px;">
-          <el-image :src="require('@/assets/bus5.png')" fit="contain">
+          <el-image :src="require('@/assets/solution/taxi_solution_4.jpg')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -97,12 +101,13 @@
           <div>
             <dl>
               <dd
-                style="font-size:x-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
-                安全驾驶舱
+                style="font-size:xx-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
+                全域搜索车辆位置及信息
               </dd>
               <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
-              <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;">
-                监测驾驶员抽烟、打电话、疲劳驾驶、手离方向盘、分神未系安全带等异常行为
+              <dd
+                style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;font-size: large;">
+                自定义条件并根据选定起始点搜索车辆位置及信息。满足各种特殊情况来定位搜寻车辆信息，多角度提升监管者工作能力。
               </dd>
             </dl>
           </div>
@@ -112,22 +117,23 @@
     <el-row style="margin-top:60px">
       <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
         :xl="{span:20,offset:2}" style="height: 425px;">
-        <el-col :span="10" :offset="1" style="margin-top: 3%;">
+        <el-col :span="10" :offset="1" style="margin-top: 1.5%;">
           <div>
             <dl>
               <dd
-                style="font-size:x-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
-                盲区预警</dd>
+                style="font-size:xx-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
+                行车数据分析</dd>
               <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
-              <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;">
-                监测行车过程中盲区的行人、电动车、自行车等情况，并预警提醒驾驶员注意行车安全
+              <dd
+                style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;font-size: large;">
+                实时汇总多种类型报表统计，如：收入分析、支出分析等。直观感受不同统计结果，全方位满足用户所需，并提供有效的数据支撑。
               </dd>
             </dl>
           </div>
         </el-col>
         <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}" :lg="{span:10,offset:3}"
           :xl="{span:10,offset:3}">
-          <el-image :src="require('@/assets/bus6.png')" fit="contain">
+          <el-image :src="require('@/assets/solution/taxi_solution_2.png')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -138,37 +144,7 @@
         </el-col>
       </el-col>
     </el-row>
-    <el-row style="margin-top:60px">
-      <el-col :xs="{span:20,offset:2}" :sm="{span:20,offset:2}" :md="{span:20,offset:2}" :lg="{span:20,offset:2}"
-        :xl="{span:20,offset:2}" style="height: 500px;">
-        <el-col :xs="{span:10,offset:0}" :sm="{span:10,offset:0}" :md="{span:10,offset:0}" :lg="{span:10,offset:0}"
-          :xl="{span:10,offset:0}" style="margin-top:50px;">
-          <el-image :src="require('@/assets/bus7.png')" fit="contain">
-            <div slot="placeholder" class="image-slot">
-              <i class="el-icon-loading"></i>加载中
-            </div>
-            <div slot="error" class="image-slot">
-              <i class="el-icon-picture-outline"></i>
-            </div>
-          </el-image>
-        </el-col>
-        <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}" :lg="{span:10,offset:3}"
-          :xl="{span:10,offset:3}" style="margin-top: 2%;">
-          <div>
-            <dl>
-              <dd
-                style="font-size:x-large;color: black;margin:auto;line-height: 110px;text-align: left;font-weight: 600;">
-                报表统计
-              </dd>
-              <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
-              <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;">
-                监测驾驶员抽烟、打电话、疲劳驾驶、手离方向盘、分神未系安全带等异常行为
-              </dd>
-            </dl>
-          </div>
-        </el-col>
-      </el-col>
-    </el-row>
+    
     <Foot></Foot>
   </div>
 </template>
@@ -196,7 +172,7 @@
 
 <style>
   .taxi_solution_banner {
-    background-image: url("../../assets/taxi2.png");
+    background-image: url("../../assets/solution/taxi2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;

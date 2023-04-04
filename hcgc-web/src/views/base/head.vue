@@ -2,7 +2,7 @@
   <el-row class="nav">
     <el-col :xs="{span:6,offset:0}" :sm="{span:6,offset:0}" :md="{span:6,offset:0}" :lg="{span:6,offset:0}"
       :xl="{span:6,offset:0}">
-      <img class="logo" src="../../assets/logo.png" @click="linkToHome()">
+      <img class="logo" src="../../assets/company_logo_2.png" @click="linkToHome()">
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
@@ -10,16 +10,7 @@
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
-      <el-dropdown>
-        <span class="el-dropdown-link">
-          产品服务<i class="el-icon-arrow-down el-icon--right"></i>
-        </span>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item @click.native="linkToProdYouyun()">优云智联</el-dropdown-item>
-          <el-dropdown-item @click.native="linkToProdBus()">智慧交通</el-dropdown-item>
-          <!-- <el-dropdown-item><a @click="linkToProdBus()">公交运维平台</a></el-dropdown-item> -->
-        </el-dropdown-menu>
-      </el-dropdown>
+      <el-link @click="linkToProdYouyun()">产品服务</el-link>
     </el-col>
     <el-col :xs="{span:2,offset:0}" :sm="{span:2,offset:0}" :md="{span:2,offset:0}" :lg="{span:2,offset:0}"
       :xl="{span:2,offset:0}" class="nav-item">
@@ -30,8 +21,7 @@
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item @click.native="linkToBusSolution()">城乡公交</el-dropdown-item>
           <el-dropdown-item @click.native="linkToTaxiSolution()">出租车/网约车</el-dropdown-item>
-          <el-dropdown-item>物流/客运</el-dropdown-item>
-          <el-dropdown-item>校车</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToSchoolBusSolution()">校车</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </el-col>
@@ -67,11 +57,7 @@
         document.documentElement.scrollTop = 0;
       },
       linkToProdYouyun() {
-        this.$router.push('/products/youyun');
-        document.documentElement.scrollTop = 0;
-      },
-      linkToProdBus() {
-        this.$router.push('/products/bus');
+        this.$router.push('/product');
         document.documentElement.scrollTop = 0;
       },
       linkToBusSolution() {
@@ -80,6 +66,10 @@
       },
       linkToTaxiSolution() {
         this.$router.push('/solution/taxi');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToSchoolBusSolution() {
+        this.$router.push('/solution/school-bus');
         document.documentElement.scrollTop = 0;
       },
     },

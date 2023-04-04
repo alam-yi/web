@@ -226,10 +226,8 @@
             },
         },
         mounted: function () {
-            // console.info(devEnv.VUE_APP_API_BASE_PATH)
         },
         created: function () {
-            // this.handleTest();
         }
     }
 </script>
@@ -242,24 +240,9 @@
 
     .el-main {
         padding: 0;
-        /* background-color: #E9EEF3; */
         color: #333;
         text-align: center;
         line-height: 160px;
-    }
-
-    .banner {
-        background: url(../assets/banner.jpg) no-repeat;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center 0;
-        top: 0;
-        left: 0;
-        zoom: 1;
     }
 
     .el-menu.el-menu--horizontal {
@@ -286,10 +269,6 @@
         text-align: center;
         line-height: 250px;
     }
-
-    /* .el-image {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
-    } */
 
     .el-carousel__item h3 {
         color: #475669;
@@ -321,9 +300,6 @@
 
 
     .l {
-        /* -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-        margin-top: -25px; */
         height: 200px;
     }
 
@@ -347,7 +323,6 @@
     }
 
     .scheme_item:hover {
-        /* box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) */
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     }
 
@@ -368,8 +343,4 @@
         width: 80%;
         margin-top: 20px;
     }
-
-    /* .case_img:hover {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
-    } */
 </style>
