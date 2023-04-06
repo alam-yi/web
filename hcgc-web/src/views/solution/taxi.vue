@@ -107,7 +107,7 @@
               <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
               <dd
                 style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;font-size: large;">
-                自定义条件并根据选定起始点搜索车辆位置及信息。满足各种特殊情况来定位搜寻车辆信息，多角度提升监管者工作能力。
+                自定义条件并根据选定起始点搜索车辆位置及信息。满足各种特殊情况来定位搜寻车辆信息，多角度提升监管者工作效率。
               </dd>
             </dl>
           </div>
@@ -161,8 +161,8 @@
     data() {
       return {
         safe_img_1: require('@/assets/solution/sleep.png'),
-        safe_img_2: require('@/assets/solution/call.png'),
-        safe_img_3: require('@/assets/solution/smoke.png'),
+        safe_img_2: require('@/assets/solution/smoke.png'),
+        safe_img_3: require('@/assets/solution/call.png'),
         safe_img_4: require('@/assets/solution/departure.png'),
         safe_img_5: require('@/assets/solution/seat_belt.png'),
       }

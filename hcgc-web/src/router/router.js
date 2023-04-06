@@ -6,6 +6,8 @@ import Product from '../views/product'
 import BusSolution from '../views/solution/bus'
 import TaxiSolution from '../views/solution/taxi'
 import SchoolBusSolution from '../views/solution/schoolbus'
+import TransportSolution from '../views/solution/transport'
+import EscortSolution from '../views/solution/escort'
 
 Vue.use(VueRouter);
 // 解决多次点击同一路由，导致路由被多次添加
@@ -47,6 +49,16 @@ const router = new VueRouter({
       path: '/solution/school-bus',
       name: 'school_bus_solution',
       component: SchoolBusSolution,
+    },
+    {
+      path: '/solution/transport',
+      name: 'transport_solution',
+      component: TransportSolution,
+    },
+    {
+      path: '/solution/escort',
+      name: 'escort_solution',
+      component: EscortSolution,
     },
     {
       path: '/about-us',

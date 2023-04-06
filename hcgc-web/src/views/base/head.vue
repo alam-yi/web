@@ -19,9 +19,11 @@
           解决方案<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item @click.native="linkToBusSolution()">城乡公交</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToBusSolution()">全域公交</el-dropdown-item>
           <el-dropdown-item @click.native="linkToTaxiSolution()">出租车/网约车</el-dropdown-item>
           <el-dropdown-item @click.native="linkToSchoolBusSolution()">校车</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToTransportSolution()">两客一危</el-dropdown-item>
+          <el-dropdown-item @click.native="linkToEscortSolution()">押运车辆</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </el-col>
@@ -70,6 +72,14 @@
       },
       linkToSchoolBusSolution() {
         this.$router.push('/solution/school-bus');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToTransportSolution() {
+        this.$router.push('/solution/transport');
+        document.documentElement.scrollTop = 0;
+      },
+      linkToEscortSolution() {
+        this.$router.push('/solution/escort');
         document.documentElement.scrollTop = 0;
       },
     },

@@ -4,11 +4,11 @@
     <Head></Head>
     <div class="bus_solution_banner"></div>
     <el-row>
-      <div style="font-size:xxx-large;line-height: 250px;">城乡公交解决方案</div>
+      <div style="font-size:xxx-large;line-height: 250px;">全域公交解决方案</div>
     </el-row>
     <el-row>
       <el-col :span="16" :offset="4" style="font-size:21px;line-height: 50px;padding-bottom: 40px;">
-        赋予城乡公交智能调度、安全驾驶舱、实时监控、盲区预警、客流统计等能力，为企业及监管部门提供智能监管服务。
+        赋予全域公交智能调度、安全驾驶舱、实时监控、盲区预警、客流统计等能力，为企业及监管部门提供智能监管服务。
       </el-col>
     </el-row>
     <el-row>

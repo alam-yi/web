@@ -52,6 +52,60 @@
       </div>
     </el-row>
     <el-row>
+      <div style="font-size:xxx-large;line-height: 250px;">售后服务</div>
+    </el-row>
+    <el-row>
+      <el-col :xs="{span:22,offset:2}" :sm="{span:22,offset:2}" :md="{span:22,offset:2}" :lg="{span:22,offset:2}"
+        :xl="{span:22,offset:2}" style="height: 700px;">
+        <el-col :xs="{span:9,offset:1}" :sm="{span:9,offset:1}" :md="{span:9,offset:1}" :lg="{span:9,offset:1}"
+          :xl="{span:9,offset:1}">
+          <div>
+            <dl>
+              <dd style="font-size:x-large;color: black;margin:auto;line-height: 90px;">以客户需求为核心</dd>
+              <dd style="text-align: initial;margin: auto; line-height: 45px;color: #73777c;">
+                &emsp;&emsp;惠诚共创科技本着 “ 追求极致、专业、专注、专心 ” 的价值观和 “ 以客户需求为核心 ” 的服务态度向客户提供满意的售后服务。</dd>
+              <dd style="text-align: initial;margin: auto; line-height: 45px;color: #73777c;">
+                1、为客户提供7*24小时实时技术支持，收到问题后30分钟内响应。</dd>
+              <dd style="text-align: initial;margin: auto; line-height: 45px;color: #73777c;">
+                2、针对一般故障于当天远程方式协助解决；出现严重故障则24小时内现场支持。
+              </dd>
+              <dd style="text-align: initial;margin: auto; line-height: 45px;color: #73777c;">
+                3、定期回访客户，不断迭代来满足客户需求，为客户创造价值。
+              </dd>
+              <dd style="text-align: initial;margin: auto; line-height: 45px;color: #73777c;">
+                4、定期检查系统并升级服务，保障高质量运营，并同步软件更新情况至客户。
+              </dd>
+            </dl>
+          </div>
+        </el-col>
+        <el-col :xs="{span:12,offset:2}" :sm="{span:12,offset:2}" :md="{span:12,offset:2}" :lg="{span:12,offset:2}"
+          :xl="{span:12,offset:2}">
+          <el-image :src="require('@/assets/support.png')" fit="contain">
+            <div slot="placeholder" class="image-slot">
+              <i class="el-icon-loading"></i>加载中
+            </div>
+            <div slot="error" class="image-slot">
+              <i class="el-icon-picture-outline"></i>
+            </div>
+          </el-image>
+        </el-col>
+      </el-col>
+    </el-row>
+    <el-row style="margin-top:50px;margin-bottom: 80px;">
+      <div id="idea" style="width: 1100px;height: 300px;position: relative;">
+        <div id="company_idea_title">
+          <span style="font-size: x-large;font-weight: 600;float: left;">企业文化</span>
+        </div>
+        <div id="company_idea_detail">
+          <div style="text-align:left;font-size: large;">追求极致<el-divider direction="vertical"></el-divider>专业·专注·专心
+          </div>
+          <div style="text-align:left;font-weight: 300;margin-top:20px;line-height: 30px;">
+            以实现客户价值为目标，追求极致，尽善尽美。做事专业：此心用度八千遍，不嫌厌倦；做事专注：抓准一个点，然后像一个钉子钻下去，做深、做透；做事专心：小事成就大事，细节成就完美。
+          </div>
+        </div>
+      </div>
+    </el-row>
+    <el-row>
       <div style="font-size:xxx-large;line-height: 250px;">公司资质</div>
     </el-row>
     <el-row>
@@ -185,20 +239,6 @@
           </div>
         </div>
       </el-col>
-    </el-row>
-    <el-row style="margin-top:50px;margin-bottom: 80px;">
-      <div id="idea" style="width: 1100px;height: 300px;position: relative;">
-        <div id="company_idea_title">
-          <span style="font-size: x-large;font-weight: 600;float: left;">企业文化</span>
-        </div>
-        <div id="company_idea_detail">
-          <div style="text-align:left;font-size: large;">追求极致<el-divider direction="vertical"></el-divider>专业·专注·专心
-          </div>
-          <div style="text-align:left;font-weight: 300;margin-top:20px;line-height: 30px;">
-            以实现客户价值为目标，追求极致，尽善尽美。做事专业：此心用度八千遍，不嫌厌倦；做事专注：抓准一个点，然后像一个钉子钻下去，做深、做透；做事专心：小事成就大事，细节成就完美。
-          </div>
-        </div>
-      </div>
     </el-row>
     <Foot></Foot>
   </div>
