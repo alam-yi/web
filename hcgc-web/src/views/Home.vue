@@ -201,7 +201,8 @@
         data() {
             return {
                 bannerList: [
-                    { id: 1, idView: require('@/assets/banner_11.png') },
+                    // { id: 1, idView: require('@/assets/banner_11.png') },
+                    { id: 1, idView: require('@/assets/home_banner_1.png') },
                     { id: 2, idView: require('@/assets/620.png') },
                     { id: 3, idView: require('@/assets/618.png') },
                 ],

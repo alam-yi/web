@@ -172,7 +172,7 @@
 
 <style>
   .taxi_solution_banner {
-    background-image: url("../../assets/solution/taxi2.png");
+    background-image: url("../../assets/solution/taxi_banner.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;

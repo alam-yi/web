@@ -168,7 +168,7 @@
 
 <style>
   .bus_solution_banner {
-    background-image: url("../../assets/prod_bus.png");
+    background-image: url("../../assets/solution/bus_banner.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;
