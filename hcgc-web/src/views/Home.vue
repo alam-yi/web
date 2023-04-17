@@ -2,12 +2,30 @@
     <div>
 
         <Head></Head>
-        <el-row>
-            <el-carousel trigger="click" height="600px" style="min-width: 100%;">
+        <el-row style="margin-top:70px;" class="carousel">
+            <!-- <el-carousel trigger="click" height="600px" style="min-width: 100%;">
                 <el-carousel-item v-for="item in bannerList" :key="item.id">
                     <img :src="item.idView" style="height: 100%;min-width: 100%;"></img>
                 </el-carousel-item>
-            </el-carousel>
+            </el-carousel> -->
+            <el-image :src="require('@/assets/home_banner_3.png')" fit="fill" style="height: 600px;min-width: 100%;">
+                <div slot="placeholder" class="image-slot">
+                    <i class="el-icon-loading"></i>加载中
+                </div>
+                <div slot="error" class="image-slot">
+                    <i class="el-icon-picture-outline"></i>
+                </div>
+            </el-image>
+            <div style="width:600px;height:250px;position: absolute;left:8%;top:24%;">
+            <dl style="color:white;text-align: left;">
+                <dd style="font-size:xx-large;font-weight: 600;">多维度的个性化车联网服务</dd>
+                <dd style="font-size:large;padding:20px 0 5px 0;">1、面向政府、企业提供全面的智慧交通信息化解决方案</dd>
+                <dd style="font-size:large;padding:5px 0;">2、立足于高速公路、国省道路、农村公路领域，进行全息感知、全业务管理、制定服务公众的智慧交通大数据综合解决方案</dd>
+                <dd style="font-size:large;padding:5px 0;">3、多种智能车联网监控管理系统平台</dd>
+                <dd style="font-size:large;padding:5px 0;">4.	安防监控信息化系统</dd>
+            </dl>
+            </div>
+            <img :src="require('@/assets/intro.png')" style="height:400px;width:650px;position: absolute;left:52%;top:13%;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);">
         </el-row>
         <el-row>
             <div class="title">方案架构</div>
@@ -202,14 +220,14 @@
             return {
                 bannerList: [
                     // { id: 1, idView: require('@/assets/banner_11.png') },
-                    { id: 1, idView: require('@/assets/home_banner_1.png') },
+                    { id: 1, idView: require('@/assets/home_banner_2.png') },
                     { id: 2, idView: require('@/assets/620.png') },
-                    { id: 3, idView: require('@/assets/618.png') },
+                    { id: 3, idView: require('@/assets/618-1.png') },
                 ],
                 safeLogoSrc: require('@/assets/safe_logo.png'),
                 costLogoSrc: require('@/assets/cost_logo.png'),
                 efficiencyLogoSrc: require('@/assets/efficiency_logo.png'),
-                carouselHeight: null
+                carouselHeight: null,
             }
         },
         components: {

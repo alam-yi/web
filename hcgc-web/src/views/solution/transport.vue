@@ -71,5 +71,6 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;
+    margin-top: 70px;
   }
 </style>

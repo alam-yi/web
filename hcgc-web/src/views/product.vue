@@ -3,116 +3,71 @@
 
     <Head></Head>
     <div class="prod_youyun_banner"></div>
-    <el-row>
+    <!-- <el-row>
       <div class="title">产品服务</div>
-    </el-row>
-    <el-row style="margin-bottom: 100px;">
+    </el-row> -->
+    <el-row>
       <el-col :span="16" :offset="4">
-        <el-tabs type="border-card">
-          <el-tab-pane label="智能中控">
-            <div style="width: 930px;">
-              <p style="font-size: x-large;text-align: left;line-height: 40px;">
-                &emsp;&emsp;一体机,IVI,DA三种中控样式，针对不同车型进行选择，软件平台有：QNX，Android,Linux三大系统，定位多种车型，如公交，出租车，客货车等。</p>
-              <div style="font-size: large;">
-                <dl id="adv" style="text-align: left;line-height: 40px;">
-                  <dt style="font-weight: 600;font-size: larger;">设备优点</dt>
-                  <dd>1、集成度高，设备控制方式齐全。</dd>
-                  <dd>2、操作界面清晰，系统扩展功能强，可靠性高等。</dd>
-                  <dd>3、低成本，高性能，高集成度，全数字化控制。</dd>
-                  <dd>4、界面简洁，支持红外触控和各种手势操控，给驾驶员带来更人性化的操作感受。</dd>
-                </dl>
-                <el-image :src="require('@/assets/product/prod_1.png')" fit="contain" class="tab1_img">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-                <el-image :src="require('@/assets/product/prod_2.png')" fit="contain" class="tab1_img">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-                <el-image :src="require('@/assets/product/prod_3.png')" fit="contain" style="margin-top:50px;">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-              </div>
-            </div>
-          </el-tab-pane>
-          <el-tab-pane label="车辆管理设备">
-            <div style="width: 930px;">
-              <p style="font-size: x-large;text-align: left;line-height: 40px;">
-                &emsp;&emsp;提供多种设备支持，为企业打造切合自身特点的管理模式，为企业建设“流程化、信息化、可视化、一体化”的智能车辆管理体系。</p>
-              <div style="font-size: large;">
-                <dl id="adv" style="text-align: left;line-height: 40px;">
-                  <dt style="font-weight: 600;font-size: larger;">为车辆系统提供两种方案，满足多场景应用</dt>
-                  <dd>1、基于A5的高集成一体方案。</dd>
-                  <dd>2、基于XPAD的智能分体方案。</dd>
-                </dl>
-                <el-image :src="require('@/assets/product/prod_4.png')" fit="contain" class="tab1_img">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-                <el-image :src="require('@/assets/product/prod_5.png')" fit="contain" class="tab1_img">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-              </div>
-              <p style="font-size: xx-large;line-height: 100px;">车载设备架构</p>
-              <el-image :src="require('@/assets/product/prod_6.png')" fit="contain" class="">
-                <div slot="placeholder" class="image-slot">
-                  <i class="el-icon-loading"></i>加载中
-                </div>
-                <div slot="error" class="image-slot">
-                  <i class="el-icon-picture-outline"></i>
-                </div>
-              </el-image>
-            </div>
-          </el-tab-pane>
-          <el-tab-pane label="智能监控系统">
-            <div style="width: 930px;">
-              <p style="font-size: x-large;text-align: left;line-height: 40px;">
-                &emsp;&emsp;车载监控摄像头使用DC12V供电，与显示或者录像机配合使用，适用于汽车等场所进行安全监控。</p>
-              <div style="font-size: large;">
-                <dl id="adv" style="text-align: left;line-height: 40px;">
-                  <dt style="font-weight: 600;font-size: larger;">功能特点</dt>
-                  <dd>1、高解晰度，低功耗。</dd>
-                  <dd>2、全自动电子快门，成像反应速度快。</dd>
-                  <dd>3、可视角度调节范围宽，可上下、左右调节可视角。</dd>
-                  <dd>4、结构美观，安装方便适合室内车载安装使用。</dd>
-                  <dd>5、自动光圈控制，有效保证明/暗环境变化的图像效果。</dd>
-                  <dd>6、低照度芯片。</dd>
-                  <dd>7、抗震性能好。</dd>
-                </dl>
-                <el-image :src="require('@/assets/product/prod_7.png')" fit="contain" class="">
-                  <div slot="placeholder" class="image-slot">
-                    <i class="el-icon-loading"></i>加载中
-                  </div>
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
-                </el-image>
-              </div>
-            </div>
-          </el-tab-pane>
-        </el-tabs>
+        <div style="font-size:x-large;line-height: 200px;text-align: left;position: relative;">产品服务方案</div>
+        <div style="width:110px;border:2px solid #409EFF;position: absolute;top:140px;"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4" style="font-size:18px;line-height: 50px;padding-bottom: 40px;text-align: left;">
+        <div>惠诚共创科技将从总体上考虑系统的建设，并倾尽全力配合用户在系统的整体规划、工程实施建设、网络支持服务以及系统的维护管理等各重要环节进行周密的部署，以充分满足其业务发展的信息化建设需要。</div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div style="font-size:x-large;line-height: 200px;text-align: left;position: relative;">技术支持与服务的组织体系结构</div>
+        <div style="width:110px;border:2px solid #409EFF;position: absolute;top:140px;"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4" style="font-size:18px;line-height: 50px;padding-bottom: 40px;text-align: left;">
+        <div>惠诚共创科技将以技术部门为核心执行单位，统一调配技术顾问、技术研发等资源，形成一个突出本地化、同时综合全国服务网络支撑的服务组织，担负起对用户工程项目的技术支持与服务工作。</div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div style="font-size:x-large;line-height: 200px;text-align: left;position: relative;">技术支持和服务的特色</div>
+        <div style="width:110px;border:2px solid #409EFF;position: absolute;top:140px;"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4" style="font-size:18px;line-height: 50px;padding-bottom: 40px;text-align: left;">
+        <div>通过多年系统工程开发和技术服务经验的积累，公司逐步认识到优良的技术支持和服务是企业的生命力所在，在技术支持和服务方面已经形成一套严格的、规范化的服务体系。</div>
+        <div>组织严格、资源充足、快速反应建立严格的组织结构，垂直领导，具有灵活的人力资源调动能力，统一调配人力资源，形成快速的技术支持服务队伍。</div>
+        <div>为用户提供应急服务，强化突发、紧急事件处理能力由于大多数用户应用具有实时性、连续性的特点。</div>
+        <div>电话支持服务、远程诊断服务、现场支持服务、设备维护与更换、系统故障报告及预防、后期技术培训、定期/不定期回访服务。</div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div style="font-size:x-large;line-height: 200px;text-align: left;position: relative;">客服中心电话支持服务</div>
+        <div style="width:110px;border:2px solid #409EFF;position: absolute;top:140px;"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4" style="font-size:18px;line-height: 50px;padding-bottom: 40px;text-align: left;">
+        <div>为实现以上目标，同时考虑到系统建设和管理工作在整个系统建设中的重要性，惠诚共创科技从成立的第一天起就设立有24小时客户服务中心：<span style="font-weight: 600;">0715-8877363</span>或<span style="font-weight: 600;">18972856911</span>，惠诚共创科技将提供24小时技术支持和售后服务支持。</div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4">
+        <div style="font-size:x-large;line-height: 200px;text-align: left;position: relative;">服务承诺</div>
+        <div style="width:110px;border:2px solid #409EFF;position: absolute;top:140px;"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="16" :offset="4" style="font-size:18px;line-height: 50px;padding-bottom: 40px;text-align: left;">
+        <div>1、遵章守法。严格遵守国家及行业各项法律、法规、标准和制度，服从行业管理，维护市场稳定，自觉维护企业良好形象。</div>
+        <div>2、承诺自双方代表在验收单上签字之日起计算，按合同保修。</div>
+        <div>3、系统试运行过程中如果发生软、硬件故障，技术人员在24小时内赶到现场，非人为情况下免费进行维修或更换。</div>
+        <div>4、质保期过后，系统若发生软、硬件故障，以不高于项目合同的实际成交价格更换故障部件，以不高于项目合同产品的实际成本提供故障部件的修复。</div>
+        <div>6、系统中的所涉及的应用软件，提供长期技术支持。如对有新的改进、增进新的功能或者为适应最新标准所形成的最新版本，均及时提供。软件、地图定期升级。</div>
+        <div>7、开通后，对本项目平台监控人员提供不少于6次/年培训，实际培训次数可根据运输企业和车主需求执行。</div>
+        <div>8、培训总的目的是使运输企业车辆管理、平台监控人员和车主在系统正式投入运行以后，能熟练掌握车辆管理平台系统的各项功能，结合运输企业和车主在各项管理上的需求有效的管理和规范驾驶员车辆安全驾驶，预防和避免交通事故的发生，提升运输企业的服务品质。</div>
       </el-col>
     </el-row>
     <Foot></Foot>
@@ -145,6 +100,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;
+    margin-top: 70px;
   }
 
   .title {

@@ -282,14 +282,19 @@
         ],
       }
     },
+    mounted: function () {
+      // document.getElementsByClassName('about_us_banner')[0].style.height = window.innerHeight - 70 + 'px';
+    },
   }
 </script>
 
 <style>
   .about_us_banner {
-    background-image: url("../assets/about_us3.png");
+    /* background-image: url("../assets/about_us3.png"); */
+    background-image: url("../assets/aboutus_banner.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    margin-top: 70px;
     height: 600px;
   }
 
