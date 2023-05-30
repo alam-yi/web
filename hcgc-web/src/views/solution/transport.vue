@@ -61,6 +61,9 @@
     },
     data() {
       return {}
+    },
+    created: function () {
+      document.title = '两客一危-湖北惠诚共创科技有限公司';
     }
   }
 </script>

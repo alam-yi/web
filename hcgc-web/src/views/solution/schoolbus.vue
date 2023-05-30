@@ -115,6 +115,9 @@
     data() {
       return {}
     },
+    created: function () {
+      document.title = '校车-湖北惠诚共创科技有限公司';
+    }
   }
 </script>
 

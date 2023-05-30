@@ -49,9 +49,9 @@ exports.cssLoaders = function (options) {
         use: loaders,
         fallback: 'vue-style-loader',
         // build时
-        // publicPath: '../../',
+        publicPath: '../../',
         // 本地运行
-        publicPath: '../',
+        // publicPath: '../',
       })
     } else {
       return ['vue-style-loader'].concat(loaders)

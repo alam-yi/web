@@ -87,6 +87,9 @@
         escort_img_5: require('@/assets/solution/computer.png'),
         escort_img_6: require('@/assets/solution/report.png'),
       }
+    },
+    created: function () {
+      document.title = '押运车辆-湖北惠诚共创科技有限公司';
     }
   }
 </script>

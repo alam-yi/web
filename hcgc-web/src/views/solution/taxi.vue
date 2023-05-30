@@ -167,6 +167,9 @@
         safe_img_5: require('@/assets/solution/seat_belt.png'),
       }
     },
+    created: function () {
+      document.title = '出租车/网约车-湖北惠诚共创科技有限公司';
+    }
   }
 </script>
 

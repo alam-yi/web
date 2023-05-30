@@ -63,23 +63,23 @@
         document.documentElement.scrollTop = 0;
       },
       linkToBusSolution() {
-        this.$router.push('/solution/bus');
+        this.$router.push('/solution-bus');
         document.documentElement.scrollTop = 0;
       },
       linkToTaxiSolution() {
-        this.$router.push('/solution/taxi');
+        this.$router.push('/solution-taxi');
         document.documentElement.scrollTop = 0;
       },
       linkToSchoolBusSolution() {
-        this.$router.push('/solution/school-bus');
+        this.$router.push('/solution-school-bus');
         document.documentElement.scrollTop = 0;
       },
       linkToTransportSolution() {
-        this.$router.push('/solution/transport');
+        this.$router.push('/solution-transport');
         document.documentElement.scrollTop = 0;
       },
       linkToEscortSolution() {
-        this.$router.push('/solution/escort');
+        this.$router.push('/solution-escort');
         document.documentElement.scrollTop = 0;
       },
     },

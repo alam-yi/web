@@ -28,7 +28,7 @@ const router = new VueRouter({
     {
       path: '/index',
       name: 'index',
-      component: Home
+      component: Home,
     },
     {
       path: '/product',
@@ -36,27 +36,27 @@ const router = new VueRouter({
       component: Product,
     },
     {
-      path: '/solution/bus',
+      path: '/solution-bus',
       name: 'bus_solution',
       component: BusSolution,
     },
     {
-      path: '/solution/taxi',
+      path: '/solution-taxi',
       name: 'taxi_solution',
       component: TaxiSolution,
     },
     {
-      path: '/solution/school-bus',
+      path: '/solution-school-bus',
       name: 'school_bus_solution',
       component: SchoolBusSolution,
     },
     {
-      path: '/solution/transport',
+      path: '/solution-transport',
       name: 'transport_solution',
       component: TransportSolution,
     },
     {
-      path: '/solution/escort',
+      path: '/solution-escort',
       name: 'escort_solution',
       component: EscortSolution,
     },

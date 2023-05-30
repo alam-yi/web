@@ -3,11 +3,6 @@
 
         <Head></Head>
         <el-row style="margin-top:70px;" class="carousel">
-            <!-- <el-carousel trigger="click" height="600px" style="min-width: 100%;">
-                <el-carousel-item v-for="item in bannerList" :key="item.id">
-                    <img :src="item.idView" style="height: 100%;min-width: 100%;"></img>
-                </el-carousel-item>
-            </el-carousel> -->
             <el-image :src="require('@/assets/home_banner_3.png')" fit="fill" style="height: 600px;min-width: 100%;">
                 <div slot="placeholder" class="image-slot">
                     <i class="el-icon-loading"></i>加载中
@@ -22,7 +17,7 @@
                 <dd style="font-size:large;padding:20px 0 5px 0;">1、面向政府、企业提供全面的智慧交通信息化解决方案</dd>
                 <dd style="font-size:large;padding:5px 0;">2、立足于高速公路、国省道路、农村公路领域，进行全息感知、全业务管理、制定服务公众的智慧交通大数据综合解决方案</dd>
                 <dd style="font-size:large;padding:5px 0;">3、多种智能车联网监控管理系统平台</dd>
-                <dd style="font-size:large;padding:5px 0;">4.	安防监控信息化系统</dd>
+                <dd style="font-size:large;padding:5px 0;">4、安防监控信息化系统</dd>
             </dl>
             </div>
             <img :src="require('@/assets/intro.png')" style="height:400px;width:650px;position: absolute;left:52%;top:13%;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);">
@@ -140,7 +135,7 @@
                             <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">智能车联网监控管理系统平台
                             </dd>
                             <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;">
-                                针对不同的场景，提供了多样化管理平台：两客一危车辆智能监控管理平台；智能公交监控调度一体化管理平台；货运监控管理平台；出租车智能化监控管理平台；押运车监控管理平台；船舶监控管理平台。（车辆传感设备：胎压监测、油量监测、载重监测、车辆举升监测、门磁监测等）
+                                针对不同的场景，提供了多样化管理平台：两客一危车辆智能监控管理平台；智能公交监控调度一体化管理平台；货运监控管理平台；出租车智能化监控管理平台；押运车监控管理平台；船舶监控管理平台等。（车辆传感设备：胎压监测、油量监测、载重监测、车辆举升监测、门磁监测等）
                             </dd>
                         </dl>
                     </div>
@@ -195,10 +190,10 @@
                             <dd style="font-size:x-large;color: black;margin:auto;line-height: 110px;">湖北某公交项目</dd>
                             <dd style="text-align: initial;margin: auto; line-height: 35px;color: #73777c;">
                                 相对传统公交，智能公交提高了安全管理智能化水平，根据客流和路况，对驾驶员行驶过程进行预警，降低事故发生概率，提高安全工作。
-                                通过”GPS智能报站”，避免传统报站的错报，漏报，误报硬气的纠纷，提高乘客的满意率。
-                                智能调度系统提高了公交线路在集中调度和单边调度的效率，实时监控、统筹发车、优化运力配置以及综合协调规范提高了车辆使用率、降低了运营成本，实现运营效能最大化。
-                                通过智能公交app，实时了解车辆已驶达的站点和前方交通情况，调整乘客自身乘车策略。
-                                借助视频监控系统，强化公安安防管理，对不法分子形成强大威慑;随时监测客流变化，优化运力调配，有效提高公交服务水平。
+                                通过”GPS智能报站”，避免传统报站的错报，漏报，误报引起的纠纷，提高乘客的满意率。
+                                智能调度系统提高了公交线路在集中调度和单边调度的效率，实时监控、统筹发车、优化运力配置以及综合协调保障了行车规范，同时提高了车辆使用率、降低了运营成本，实现运营效能最大化。
+                                通过智能公交app，实时了解车辆驶达的站点和前方交通情况，调整乘客自身乘车策略。
+                                借助视频监控系统，强化公安安防管理，对不法分子形成强大威慑。随时监测客流变化，优化运力调配，有效提高公交服务水平。
                             </dd>
                         </dl>
                     </div>
@@ -218,12 +213,6 @@
     export default {
         data() {
             return {
-                bannerList: [
-                    // { id: 1, idView: require('@/assets/banner_11.png') },
-                    { id: 1, idView: require('@/assets/home_banner_2.png') },
-                    { id: 2, idView: require('@/assets/620.png') },
-                    { id: 3, idView: require('@/assets/618-1.png') },
-                ],
                 safeLogoSrc: require('@/assets/safe_logo.png'),
                 costLogoSrc: require('@/assets/cost_logo.png'),
                 efficiencyLogoSrc: require('@/assets/efficiency_logo.png'),
@@ -247,6 +236,7 @@
         mounted: function () {
         },
         created: function () {
+            document.title = '湖北惠诚共创科技有限公司';
         }
     }
 </script>

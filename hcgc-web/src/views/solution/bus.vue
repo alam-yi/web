@@ -13,7 +13,7 @@
     </el-row>
     <el-row>
       <el-col :span="20" :offset="2" style="height: 800px;">
-        <el-image :src="require('@/assets/solution/bus1.jpg')" fit="contain" class="bus_img_1">
+        <el-image :src="require('../../assets/solution/bus1.jpg')" fit="contain" class="bus_img_1">
           <div slot="placeholder" class="image-slot">
             <i class="el-icon-loading"></i>加载中
           </div>
@@ -44,7 +44,7 @@
         </el-col>
         <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}" :lg="{span:10,offset:3}"
           :xl="{span:10,offset:3}">
-          <el-image :src="require('@/assets/solution/bus2.jpg')" fit="contain">
+          <el-image :src="require('../../assets/solution/bus2.jpg')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -60,7 +60,7 @@
         :xl="{span:20,offset:2}" style="height: 500px;">
         <el-col :xs="{span:10,offset:0}" :sm="{span:10,offset:0}" :md="{span:10,offset:0}" :lg="{span:10,offset:0}"
           :xl="{span:10,offset:0}" style="margin-top:50px;">
-          <el-image :src="require('@/assets/solution/bus5.png')" fit="contain">
+          <el-image :src="require('../../assets/solution/bus5.png')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -104,7 +104,7 @@
         </el-col>
         <el-col :xs="{span:10,offset:3}" :sm="{span:10,offset:3}" :md="{span:10,offset:3}" :lg="{span:10,offset:3}"
           :xl="{span:10,offset:3}">
-          <el-image :src="require('@/assets/solution/bus6.png')" fit="contain">
+          <el-image :src="require('../../assets/solution/bus6.png')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -120,7 +120,7 @@
         :xl="{span:20,offset:2}" style="height: 500px;">
         <el-col :xs="{span:10,offset:0}" :sm="{span:10,offset:0}" :md="{span:10,offset:0}" :lg="{span:10,offset:0}"
           :xl="{span:10,offset:0}" style="margin-top:50px;">
-          <el-image :src="require('@/assets/solution/bus7.png')" fit="contain">
+          <el-image :src="require('../../assets/solution/bus7.png')" fit="contain">
             <div slot="placeholder" class="image-slot">
               <i class="el-icon-loading"></i>加载中
             </div>
@@ -139,7 +139,7 @@
               </dd>
               <dd style="border-top: 5px solid #409EFF;margin: 0;width: 80px"></dd>
               <dd style="text-align: initial;margin: auto; line-height: 30px;color: #73777c;margin-top: 20px;font-size: large;">
-                监测驾驶员抽烟、打电话、疲劳驾驶、手离方向盘、分神未系安全带等异常行为
+                针对每个站点上下车客流进行统计分析，从多种维度生成报表，极大的方便运营及管理人员进行数据分析。
               </dd>
             </dl>
           </div>
@@ -163,6 +163,9 @@
       return {
       }
     },
+    created: function () {
+      document.title = '全域公交-湖北惠诚共创科技有限公司';
+    }
   }
 </script>
 

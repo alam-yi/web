@@ -3,7 +3,7 @@
 
     <Head></Head>
     <div class="about_us_banner"></div>
-    <el-row>
+    <el-row class="company_introduce">
       <div style="font-size:xxx-large;line-height: 250px;">公司简介</div>
     </el-row>
     <el-row>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </el-row>
-    <el-row>
+    <el-row class="after_sale">
       <div style="font-size:xxx-large;line-height: 250px;">售后服务</div>
     </el-row>
     <el-row>
@@ -105,7 +105,7 @@
         </div>
       </div>
     </el-row>
-    <el-row>
+    <el-row class="company_qualification">
       <div style="font-size:xxx-large;line-height: 250px;">公司资质</div>
     </el-row>
     <el-row>
@@ -285,6 +285,9 @@
     mounted: function () {
       // document.getElementsByClassName('about_us_banner')[0].style.height = window.innerHeight - 70 + 'px';
     },
+    created: function () {
+      document.title = '关于我们-湖北惠诚共创科技有限公司';
+    }
   }
 </script>
 
